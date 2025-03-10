@@ -1,0 +1,609 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-family: 'poppins',sans-serif;
+    overflow-x: hidden;
+    cursor: pointer;
+    
+    
+    
+}
+
+
+/*_____header_section_____*/
+
+.header-section{
+    width: 100%;
+    background-color: rgba(23 ,23 ,23 ,0.15);
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1000;
+
+}
+
+.header-section .logo{
+    font-family: 'poppins';
+    font-weight: 600;
+    font-size: 20px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+
+.header-section ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.header-section ul li{
+    list-style: none;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.header-section ul li a{
+    text-decoration: none;
+    color: white;
+    margin-right: 25px;
+
+}
+
+.toogle .toogle-logo{
+    display: none;
+
+}
+
+
+
+
+
+
+/* main page */
+
+.container-2{
+
+    margin-top: 0%;
+    width: 100%;
+    height: 100vh;
+    background-color: #081b29;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.wrapper{
+    text-align: center;
+    
+    padding-bottom: 15px;
+}
+
+.wrapper h1{
+    
+    font-family: 'poppins';
+    font-size: 60px;
+    color: aliceblue;
+
+}
+
+.wrapper h3{
+    font-size: 40px;
+    color: #00abf0;
+}
+
+/* home button section */
+
+.buttons{
+    margin-top: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+
+
+
+.buttons .button-1{
+
+    font-size: 15px;
+    padding: 8px 20px;
+    border-radius: 9px;
+    border: 2px solid #00abf0;
+    text-decoration: none;
+    background-color: #00abf0;
+    color:#081b29;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-right: 10px;
+    
+        
+}
+
+      
+.buttons .button-1:hover {
+    border: 2px solid #00abf0;
+    background-color: transparent;
+    color: aliceblue;
+}
+
+
+     
+.buttons .button-2{
+    font-size: 15px;
+    padding: 8px 20px;
+    border-radius: 9px;
+    border: 2px solid #00abf0;
+    text-decoration: none;
+    background-color: transparent;
+    color:white;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-right: 10px;
+    
+
+}
+
+.buttons .button-2:hover {
+    
+    background-color: #00abf0;
+    color:#081b29;
+}
+    
+/*about section*/
+
+.section-2{
+    width: 100%;
+    height: 100vh;
+    background-color: #112e42;
+    margin: 0;
+}
+
+.section-2 {
+    width: 100%;
+    height: 100vh;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.section-2 h1{
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 20px;
+    color: white;
+}
+.section-2 h1 span{ 
+    color:#00abf0;
+}
+
+.section-2 p{
+    width:90%;
+    text-align: center;
+    margin: 20px 0px 20px;
+    color:white;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/* skill section */
+.wrapper-2{
+    width: 100%;
+    height: 100vh;
+    background-color: #081b29;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.container{
+    width: 50%;
+    padding: 50px 30px 50px;
+    background-color: transparent;
+    border-radius: 10px;
+    border: 2px solid #00abf0;
+   
+    } 
+.container *{
+    font-family: “Poppins”,sans-serif;
+    color:white;
+    font-weight: 500;
+    }
+.wrapper-2 h2{
+margin-bottom: 50px;
+letter-spacing: 2px;
+text-align: center;
+font-size: 33px;
+font-weight: bold;
+}
+
+.container h2 span{
+    color: #00abf0;
+    font-size: 33px;
+    font-weight: bold;
+}
+.det{
+    width: 100%;
+    display: flex;  
+    justify-content: space-between;
+    margin-bottom: 10px;
+    }
+    .bar {
+        position: relative;
+        border: 2px solid #00abf0;
+        border-radius: 20px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        z-index: ;
+    }
+    .bar div{
+        position: relative;
+        width: 50%;
+        height: 9px;
+        border-radius: 10px;
+        background-color: #5c69ff;
+    }
+
+    /* skills animation section */
+
+    #html-bar{
+        animation: html-fill 2s forwards;
+        }
+        @keyframes html-fill{
+        100%{
+            width: 90%;
+        }
+        }
+        
+        #py-bar{
+        animation: py-fill 2s forwards;
+        }
+        @keyframes py-fill{
+        100%{
+            width: 30%;
+        }
+        }
+        #java-bar{
+        animation: java-fill 2s forwards;
+        }
+        @keyframes java-fill{
+        100%{
+            width: 20%;
+        }
+        }
+        
+        #c-bar{
+        animation: c-fill 2s forwards;
+        }
+        @keyframes c-fill{
+        100%{
+            width: 40%;
+        }
+        }
+
+
+
+
+
+
+
+/* contact SECTION */
+
+.Contact{
+    width: 100%;
+    height: 100vh;
+    background-color: #112e42;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0%;
+    
+}
+
+
+.Contact h2{
+    font-size: 30px;
+    color: aliceblue;
+    margin-bottom: 30px;
+}
+
+.Contact h2 span{
+    color: #00abf0;
+}
+
+.Contact form{
+    max-width: 40rem;
+    height: 20rem;
+    margin: 0 auto;
+    text-align: center;
+    overflow: hidden;
+
+    
+    
+}
+
+.Contact form .input-box{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    flex-wrap: wrap;
+}
+
+.Contact form .input-box .input-field{
+    position: relative;
+    width: 49%;
+    margin: .5rem 0;
+
+}
+
+.Contact form .input-box .input-field input{
+    width: 100%;
+    height: 100%;
+    padding:.5rem ;
+    font-size: 16px;
+    color: white;
+    background: transparent;
+    border: 2px solid #00abf0;
+}
+
+.Contact form .input-box .input-field input::placeholder{
+    font-size: 17px;
+    color: white;
+}
+
+ .textarea-field textarea{
+
+    width: 100%;
+    height: 100px;
+    padding: .5rem;
+    font-size: 1.6rem;
+    color: white;
+    background: transparent;
+    border: 2px solid #00abf0;
+    overflow: hidden;
+    resize: none;
+}
+
+.textarea-field textarea::placeholder{
+    font-size: 19px;
+    color: white;
+}
+
+.Contact form .btn-box{
+    width: 100%;
+    padding: 0px;
+
+
+}
+
+.Contact form .btn-box button {
+    padding: 10px 10px;
+    color: aliceblue;
+    background: #00abf0;
+    border: 2px solid #00abf0;
+    width: 30%;
+    border-radius: 10px;
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 500;
+
+}
+
+.Contact form .btn-box button:hover{
+    background: transparent;
+
+
+}
+
+
+.br::after {
+    content: " ";
+  }    
+
+
+
+        
+    
+@media (max-width: 767px) {
+
+    .header-section{
+        width: 100%;
+        background-color: #081b29;
+        padding: 20px;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        overflow:visible;
+        z-index: 1000;
+        
+    
+    }
+
+    .header-section .logo{
+        font-size: 26px;
+    }
+
+   
+
+    .header-section .toogle .toogle-logo{
+        display: block;
+        cursor: pointer;
+        overflow-x: hidden;
+        width: 50px;
+        
+      
+        
+        
+            
+    }
+    .material-symbols-outlined {
+        font-size: 35px !important;
+        margin-top: 4px;
+        margin-right: 0px;
+        overflow: hidden;
+    }
+    
+
+    .header-section .toogle{
+        width: 50px;
+
+    }
+    
+
+   
+    
+    .header-section ul{
+        display: none;
+       
+    }
+    
+
+    .header-section .menu{
+        width: 100%;
+        height: 100vh;
+        background-color: #081b29;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top:60px;
+        
+
+    }
+
+    .header-section ul li{
+        margin: 25px;
+    }
+
+    .header-section .menu.is-active{
+        
+        display: block;
+        overflow: hidden;
+    
+        
+    }
+
+    .container{
+        min-width: 80%;
+    }
+
+    /* contact section */
+
+    .Contact form{
+        max-width: 25rem;
+        height: 20rem;
+        margin: 0 auto;
+        text-align: center;
+        overflow: hidden;
+    
+        
+        
+    }
+
+    
+
+
+
+}
+
+
+@media (max-width: 480px){
+    .container{
+        min-width: 80%;
+       
+            
+            
+    }
+
+    .container-2 h1{
+        font-size:49px;
+
+    }
+
+    .br::after {
+        content: "\A"; /* Inserts a line break */
+        white-space: pre;
+      }
+    /* contact section */
+
+    .Contact form{
+        max-width: 20rem;
+        height: 20rem;
+        margin: 0 auto;
+        text-align: center;
+        overflow: hidden;
+    
+        
+        
+    }
+
+    .Contact form .btn-box button {
+        padding: 10px 10px;
+        color: aliceblue;
+        background: #00abf0;
+        border: 2px solid #00abf0;
+        width: 40%;
+        border-radius: 10px;
+        margin-top: 10px;
+        font-size: 16px;
+        font-weight: 500;
+    
+    }
+    
+    .Contact form .btn-box button:hover{
+        background: transparent;
+    
+    
+    }
+
+
+
+
+   
+}
+
+@media (max-width: 376px){
+    .container{
+        width: 80%;
+       
+            
+            
+    }
+
+    .container-2 h1{
+        font-size:39px;
+
+    }
+
+    .container-2 h3{
+        font-size:35px;
+
+    }
+
+
+
+
+   
+}
+
+
+
+
+    
+
