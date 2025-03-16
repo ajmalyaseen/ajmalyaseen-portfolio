@@ -3,6 +3,24 @@ let menu = document.querySelector('.menu');
 let menuLinks = document.querySelectorAll('.menu a');
 let header = document.querySelector('header'); // Select the header
 
+$("#submit-form").submit((e)=>{
+            e.preventDefault()
+            $.ajax({
+                url:"https://script.google.com/macros/s/AKfycbxAclj47bkqsJXSf-WKgmbkAf2kIL7d-Yo8CrCVInlv02B72qPCg6L2RfDu6Rk60A2sVg/exec",
+                data:$("#submit-form").serialize(),
+                method:"post",
+                success:function (response){
+                    alert("Form submitted successfully")
+                    window.location.reload()
+                    //window.location.href="https://google.com"
+                },
+                error:function (err){
+                    alert("Something Error")
+    
+                }
+            })
+        })
+
 // Toggle menu on click of the logo
 tooglelogo.addEventListener('click', function () {
     menu.classList.toggle('is-active');
